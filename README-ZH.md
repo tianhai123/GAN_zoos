@@ -1,4 +1,6 @@
 # DeepNude：一种由图像生成图像的技术
+nice coder
+
 [English Version](https://github.com/yuanxiaosc/DeepNude-an-Image-to-Image-technology) | [中文版](README-ZH.md)
 
 ![](paper_images/GeneratingAdversarialNetworkMap2020-ZH.png)
