@@ -1,9 +1,9 @@
-# DeepNude-an-Image-to-Image-technology
-[中文版](README-ZH.md) | [English Version](https://github.com/yuanxiaosc/DeepNude-an-Image-to-Image-technology)
+# DeepImage-an-Image-to-Image-technology
+[中文版](README-ZH.md) | [English Version](https://github.com/yuanxiaosc/DeepImage-an-Image-to-Image-technology)
 
 ![](paper_images/GeneratingAdversarialNetworkMap2020.png)
 
-This repository contains the pix2pixHD algorithms(proposed by NVIDIA) of [DeepNude](DeepNude_software_itself), and more importantly, the general image generation theory and practice behind DeepNude.
+This warehouse contains the pix2pixHD (proposed by Nvidia) algorithm, and more importantly, the universal image generation theory and practical research behind it.
 
 This resource includes the TensorFlow2 (Pytorch | PaddlePaddle) implementation of image generation models such as [pix2pix](Pix2Pix), [CycleGAN](CycleGAN), UGATIT, [DCGAN](DCGAN), SinGAN, [VAE](Variational_Autoencoder), ALAE, mGANprior and StarGAN-v2, which can be used to systematically learn to Generating Adversarial Network (GAN).
 
@@ -11,26 +11,19 @@ This resource includes the TensorFlow2 (Pytorch | PaddlePaddle) implementation o
 
 ## Content of this resource
 
-1. What is DeepNude?
+1. What is DeepImage?
 2. Fake Image Generation and Image-to-Image Demo
-3. DeepNude Algorithm: Normal to Pornography Image
+3. DeepImage Algorithm: Normal to Pornography Image
 4. NSFW: Pornography to Normal Image, Pornographic Image Detection
 5. GAN Image Generation Theoretical Research
 6. GAN Image Generation Practice Research
-7. DeepNude to DeepFakes
+7. DeepImage to DeepFakes
 8. Future
 
 ---
 
-> This repository is being sponsored by the following tool; please help to support us by taking a look and signing up to a free trial.
-
-<a href="https://tracking.gitads.io/?repo=DeepNude-an-Image-to-Image-technology"><img src="https://images.gitads.io/DeepNude-an-Image-to-Image-technology" alt="GitAds"/></a>
-
-
----
-
-## What is DeepNude?
-DeepNude uses a slightly modified version of the [pix2pixHD](https://github.com/NVIDIA/pix2pixHD) GAN architecture, quoted from deepnude_official. pix2pixHD is a general-purpose Image2Image technology proposed by NVIDIA. Obviously, DeepNude is the wrong application of artificial intelligence technology, but it uses Image2Image technology for researchers and developers working in other fields such as fashion, film and visual effects.
+## What is DeepImage?
+DeepImage uses a slightly modified version of the [pix2pixHD](https://github.com/NVIDIA/pix2pixHD) GAN architecture, quoted from DeepImage_official. pix2pixHD is a general-purpose Image2Image technology proposed by NVIDIA. Obviously, DeepImage is the wrong application of artificial intelligence technology, but it uses Image2Image technology for researchers and developers working in other fields such as fashion, film and visual effects.
 
 ---
 
@@ -45,7 +38,7 @@ This section provides a fake image generation demo that you can use as you wish.
 
 ## Image-to-Image Demo
 
-This section provides a demo of Image-to-Image Demo: Black and white stick figures to colorful faces, cats, shoes, handbags. DeepNude software mainly uses Image-to-Image technology, which theoretically converts the images you enter into any image you want. You can experience Image-to-Image technology in your browser by clicking Image-to-Image Demo below.
+This section provides a demo of Image-to-Image Demo: Black and white stick figures to colorful faces, cats, shoes, handbags. DeepImage software mainly uses Image-to-Image technology, which theoretically converts the images you enter into any image you want. You can experience Image-to-Image technology in your browser by clicking Image-to-Image Demo below.
 
 [Try Image-to-faces Demo](http://www.geometrylearning.com:3000/index_EN_621.html)
 
@@ -62,12 +55,12 @@ In the left side box, draw a cat as you imagine, and then click the process butt
 
 ---
 
-## :underage: DeepNude Algorithm
-> DeepNude is a pornographic software that is forbidden by minors. If you are not interested in DeepNude itself, you can skip this section and see the general Image-to-Image theory and practice in the following chapters.
+## :underage: DeepImage Algorithm
+> DeepImage is a pornographic software that is forbidden by minors. If you are not interested in DeepImage itself, you can skip this section and see the general Image-to-Image theory and practice in the following chapters.
 
-[DeepNude_software_itself](DeepNude_software_itself) content:
-1. Official DeepNude Algorithm(Based on Pytorch)
-2. DeepNude software usage process and evaluation of advantages and disadvantages.
+[DeepImage_software_itself](DeepImage_software_itself) content:
+1. Official DeepImage Algorithm(Based on Pytorch)
+2. DeepImage software usage process and evaluation of advantages and disadvantages.
 
 
 
@@ -84,7 +77,7 @@ NSFW(Not Safe/Suitable For Work) is a large-scale image dataset containing five 
 
 ## Image Generation Theoretical Research
 
-This section describes DeepNude-related AI/Deep Learning theory (especially computer vision) research. If you like to read the paper and use the latest papers, enjoy it.
+This section describes DeepImage-related AI/Deep Learning theory (especially computer vision) research. If you like to read the paper and use the latest papers, enjoy it.
 
 1. [Click here to systematically understand GAN](GAN_History)
 2. [Click here to systematically image-to-image-papers](https://github.com/lzhbrian/image-to-image-papers/blob/master/README.md)
@@ -106,7 +99,7 @@ This section describes DeepNude-related AI/Deep Learning theory (especially comp
 <summary>View more paper studies (Click the black arrow on the left to expand)</summary>
 
 ### 2. Pix2PixHD
-> DeepNude mainly uses this Image-to-Image(Pix2PixHD) technology.
+> DeepImage mainly uses this Image-to-Image(Pix2PixHD) technology.
 
 + NVIDIA 2018 [High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs](https://arxiv.org/abs/1711.11585)
 + [Pix2PixHD homepage](https://tcwang0509.github.io/pix2pixHD/)
@@ -180,7 +173,7 @@ Without increasing the amount of calculation of StyleGAN, while solving the imag
 
 ![](paper_images/2018_NVIDIA_Image_Inpainting_examples.png)
 
-In the image interface of [Image_Inpainting(NVIDIA_2018).mp4](https://github.com/yuanxiaosc/DeepNude-an-Image-to-Image-technology/raw/master/paper_images/Image_Inpainting(NVIDIA_2018).mp4) video, you only need to use tools to simply smear the unwanted content in the image. Even if the shape is very irregular, NVIDIA's model can “restore” the image with very realistic The picture fills the smeared blank. It can be described as a one-click P picture, and "no ps traces." The study was based on a team from Nvidia's Guilin Liu et al. who published a deep learning method that could edit images or reconstruct corrupted images, even if the images were worn or lost pixels. This is the current 2018 state-of-the-art approach.
+In the image interface of [Image_Inpainting(NVIDIA_2018).mp4](https://github.com/yuanxiaosc/DeepImage-an-Image-to-Image-technology/raw/master/paper_images/Image_Inpainting(NVIDIA_2018).mp4) video, you only need to use tools to simply smear the unwanted content in the image. Even if the shape is very irregular, NVIDIA's model can “restore” the image with very realistic The picture fills the smeared blank. It can be described as a one-click P picture, and "no ps traces." The study was based on a team from Nvidia's Guilin Liu et al. who published a deep learning method that could edit images or reconstruct corrupted images, even if the images were worn or lost pixels. This is the current 2018 state-of-the-art approach.
 
 ### 7. SinGAN
 ICCV2019 Best paper - Marr prize
@@ -252,7 +245,7 @@ Recent deep image-to-image translation techniques allow fast generation of face 
 ## Image Generation Practice Research
 > These models are based on the latest implementation of TensorFlow2.
 
-This section explains DeepNude-related AI/Deep Learning (especially computer vision) code practices, and if you like to experiment, enjoy them.
+This section explains DeepImage-related AI/Deep Learning (especially computer vision) code practices, and if you like to experiment, enjoy them.
 
 ### 1. Pix2Pix
 
@@ -292,8 +285,8 @@ If you are a user of [PaddlePaddle](https://github.com/PaddlePaddle/Paddle), you
 
 ---
 
-## DeepFakes (Promotion of DeepNude)
-> DeepFakes can be seen as an upgraded version of DeepNude, which uses a deep learning model to generate a series of techniques that can be faked, such as fake images, fake audio, and fake videos.
+## DeepFakes (Promotion of DeepImage)
+> DeepFakes can be seen as an upgraded version of DeepImage, which uses a deep learning model to generate a series of techniques that can be faked, such as fake images, fake audio, and fake videos.
 
 ### [MyVoiceYourFace](https://www.myvoiceyourface.com/)
 > Using deep fake machine learning to create a video from an image and a source video. [Related paper: First Order Motion Model for Image Animation](https://aliaksandrsiarohin.github.io/first-order-model-website/)

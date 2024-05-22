@@ -1,9 +1,9 @@
-# DeepNude：一种由图像生成图像的技术
-[English Version](https://github.com/yuanxiaosc/DeepNude-an-Image-to-Image-technology) | [中文版](README-ZH.md)
+# DeepImage：一种由图像生成图像的技术
+[English Version](https://github.com/yuanxiaosc/DeepImage-an-Image-to-Image-technology) | [中文版](README-ZH.md)
 
 ![](paper_images/GeneratingAdversarialNetworkMap2020-ZH.png)
 
-这个仓库包含[DeepNude](DeepNude_software_itself)的pix2pixHD(由英伟达提出)算法，更重要的是DeepNude背后通用的图像生成理论与实践研究。
+这个仓库包含pix2pixHD(由英伟达提出)算法，更重要的是背后通用的图像生成理论与实践研究。
 
 本资源包含[pix2pix](Pix2Pix), [CycleGAN](CycleGAN), UGATIT, [DCGAN](DCGAN), SinGAN, [VAE](Variational_Autoencoder), ALAE, mGANprior和StarGAN-v2等图像生成模型的 [TensorFlow2](https://www.tensorflow.org/) (Pytorch | PaddlePaddle) 实现，可以用来系统性地学习生成对抗网络（GAN）。
 
@@ -11,26 +11,18 @@
 
 ## 本资源内容
 
-1. 什么是 DeepNude?
+1. 什么是 DeepImage?
 2. 试玩图像生成Demo
 3. 由正常图像生成色情图像
 4. 由色情图像生成正常图像，色情图像检测
 5. GAN 图像生成理论研究
 6. GAN 图像生成实践研究
-7. DeepNude 进阶 DeepFakes
+7. DeepImage 进阶 DeepFakes
 8. 展望未来
 
----
+## 什么是 DeepImage?
 
-> 此存储库由以下工具赞助，您对下面广告的每一次点击和免费试用都是对本项目的大力支持，谢谢！
-
-<a href="https://tracking.gitads.io/?repo=DeepNude-an-Image-to-Image-technology"><img src="https://images.gitads.io/DeepNude-an-Image-to-Image-technology" alt="GitAds"/></a>
-
----
-
-## 什么是 DeepNude?
-
-[DeepNude](https://github.com/yuanxiaosc/DeepNude-an-Image-to-Image-technology/tree/master/DeepNude_software_itself)使用了一个稍微修改过的 [pix2pixHD](https://github.com/NVIDIA/pix2pixHD) GAN 架构。pix2pixHD是由NVIDIA提出的一种通用的Image2Image技术。显然，DeepNude是人工智能技术的错误应用，但它使用的Image2Image技术对于在时尚，电影和视觉效果等其他领域工作的研究人员和开发人员非常有用。
+DeepImage使用了一个稍微修改过的 [pix2pixHD](https://github.com/NVIDIA/pix2pixHD) GAN 架构。pix2pixHD是由NVIDIA提出的一种通用的Image2Image技术。显然，DeepImage是人工智能技术的错误应用，但它使用的Image2Image技术对于在时尚，电影和视觉效果等其他领域工作的研究人员和开发人员非常有用。
 
 ---
 
@@ -45,7 +37,7 @@
 
 ## 由图像生成图像 Demo
 
-这一部分提供一个试玩的 Image-to-Image Demo：黑白简笔画到色彩丰富的人脸、猫、鞋、手袋。DeepNude 软件主要使用了Image-to-Image技术，该技术理论上可以把你输入的图片转换成任何你想要的图片。你可以点击下方的Image-to-Image Demo在浏览器中体验Image-to-Image技术。
+这一部分提供一个试玩的 Image-to-Image Demo：黑白简笔画到色彩丰富的人脸、猫、鞋、手袋。DeepImage 软件主要使用了Image-to-Image技术，该技术理论上可以把你输入的图片转换成任何你想要的图片。你可以点击下方的Image-to-Image Demo在浏览器中体验Image-to-Image技术。
 
 [尝试从草图深度生成人脸图像 Demo](http://www.geometrylearning.com:3000/index_621.html)
 
@@ -62,12 +54,12 @@
 
 ---
 
-## :underage: DeepNude Algorithm
-> 如果你对DeepNude本身不感兴趣，可以直接跳过本节，查看后面章节中通用的Image-to-Image理论与实践研究。
+## :underage: DeepImage Algorithm
+> 如果你对DeepImage本身不感兴趣，可以直接跳过本节，查看后面章节中通用的Image-to-Image理论与实践研究。
 
-[DeepNude_software_itself](DeepNude_software_itself) 内容:
-1. 官方的DeepNude算法（基于Pytorch）
-2. DeepNude软件的使用过程和优缺点评估。
+[DeepImage_software_itself](DeepImage_software_itself) 内容:
+1. 官方的DeepImage算法（基于Pytorch）
+2. DeepImage软件的使用过程和优缺点评估。
 
 ### :+1: NSFW
 
@@ -80,7 +72,7 @@
 
 ## 图像生成理论研究
 
-这一部分阐述DeepNude相关的人工智能/深度学习理论（特别是计算机视觉）研究，如果你喜欢阅读论文使用最新论文成果，尽情享用吧。
+这一部分阐述DeepImage相关的人工智能/深度学习理论（特别是计算机视觉）研究，如果你喜欢阅读论文使用最新论文成果，尽情享用吧。
 
 1. [单击此处以系统地了解GAN](GAN_History)
 2. [单击此处以系统地了解将图像转换为图像的论文](https://github.com/lzhbrian/image-to-image-papers/blob/master/README.md)
@@ -104,7 +96,7 @@
 <summary>查看更多论文研究（点击左侧黑色箭头展开）</summary>
 
 ### 2. Pix2PixHD
-> DeepNude主要使用此图像到图像（Pix2PixHD）技术。
+> DeepImage主要使用此图像到图像（Pix2PixHD）技术。
 
 + 论文 NVIDIA 2018 [High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs](https://arxiv.org/abs/1711.11585)
 + 主页 [Pix2PixHD homepage](https://tcwang0509.github.io/pix2pixHD/)
@@ -176,7 +168,7 @@ StyleGAN 不仅可以生成假的图片source A 和 source B，还可以结合�
 
 ![](paper_images/2018_NVIDIA_Image_Inpainting_examples.png)
 
-在 [Image_Inpainting(NVIDIA_2018).mp4](https://github.com/yuanxiaosc/DeepNude-an-Image-to-Image-technology/raw/master/paper_images/Image_Inpainting(NVIDIA_2018).mp4) 视频中左侧的操作界面，只需用工具将图像中不需要的内容简单涂抹掉，哪怕形状很不规则，NVIDIA的模型能够将图像“复原”，用非常逼真的画面填补被涂抹的空白。可谓是一键P图，而且“毫无ps痕迹”。该研究来自Nvidia的Guilin Liu等人的团队，他们发布了一种可以编辑图像或重建已损坏图像的深度学习方法，即使图像穿了个洞或丢失了像素。这是2018 state-of-the-art的方法。
+在 [Image_Inpainting(NVIDIA_2018).mp4](https://github.com/yuanxiaosc/DeepImage-an-Image-to-Image-technology/raw/master/paper_images/Image_Inpainting(NVIDIA_2018).mp4) 视频中左侧的操作界面，只需用工具将图像中不需要的内容简单涂抹掉，哪怕形状很不规则，NVIDIA的模型能够将图像“复原”，用非常逼真的画面填补被涂抹的空白。可谓是一键P图，而且“毫无ps痕迹”。该研究来自Nvidia的Guilin Liu等人的团队，他们发布了一种可以编辑图像或重建已损坏图像的深度学习方法，即使图像穿了个洞或丢失了像素。这是2018 state-of-the-art的方法。
 
 ### 7. SinGAN
 ICCV2019 最佳论文 - Marr prize
@@ -250,7 +242,7 @@ SinGAN 包含一个全卷积金字塔 GAN，金字塔的每一层负责学习不
 ## Image Generation Practice Research
 > 这些模型基于TensorFlow2的最新实现。
 
-这一部分阐述DeepNude相关的人工智能/深度学习（特别是计算机视觉）代码实践，如果你喜欢动手做实验，尽情享用它们。
+这一部分阐述DeepImage相关的人工智能/深度学习（特别是计算机视觉）代码实践，如果你喜欢动手做实验，尽情享用它们。
 
 ### 1. Pix2Pix
 
@@ -292,8 +284,8 @@ SinGAN 包含一个全卷积金字塔 GAN，金字塔的每一层负责学习不
 
 ---
 
-## DeepFakes (DeepNude的升级版)
-> DeepFakes可以看做是DeepNude的升级版，它包含使用深度学习模型生成一系列可以以假乱真的东西技术，例如假的图像、假的音频和假的视频。
+## DeepFakes (DeepImage的升级版)
+> DeepFakes可以看做是DeepImage的升级版，它包含使用深度学习模型生成一系列可以以假乱真的东西技术，例如假的图像、假的音频和假的视频。
 
 ### [MyVoiceYourFace](https://www.myvoiceyourface.com/)
 > MyVoiceYourFace 可以帮助你创建 Deepfake 视频，从一个静止的图片为上传的视频换脸生成假视频。它可以保留音频并模仿原视频的表情瞬间。你需要做的只是上传视频和想要替换的人脸图片。 [相关论文 First Order Motion Model for Image Animation](https://aliaksandrsiarohin.github.io/first-order-model-website/)
